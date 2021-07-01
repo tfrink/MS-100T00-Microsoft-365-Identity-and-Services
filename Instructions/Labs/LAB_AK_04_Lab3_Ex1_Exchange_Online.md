@@ -16,9 +16,9 @@ As you continue in your role as Holly Dickson, you are ready to review the steps
 
 3. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Show all** (if necessary), then scroll down to **Admin centers** and select **Exchange**. This will open the **Exchange admin center** in a new tab. This is the Exchange admin center for Microsoft Exchange Online. 
 
-4. In the **Exchange admin center**, select **recipients** in the left-hand navigation pane.
+4. In the **Exchange admin center**, select **Recipients** in the left-hand navigation pane to expand the Recipients group.
 
-5. In the **recipients** view, under recipients select **Mailboxes**. The mailboxes that appear in this view include all the user accounts that were pre-created in your tenant by the lab hosting provider, along with the mailboxes for Holly Dickson and Laura Atkins that were created when you added their Microsoft 365 user accounts in the prior lab. <br/>
+5. In the **Recipients** group in the left-hand navigation pane, select **Mailboxes**. The mailboxes that appear in this view include all the user accounts that were pre-created in your tenant by the lab hosting provider, along with the mailboxes for Holly Dickson and Laura Atkins that were created when you added their Microsoft 365 user accounts in the prior lab. <br/>
 
 	Select the mailbox for **Joni Sherman** by clicking on her **DISPLAY NAME.** This will open the **User Mailbox** window with Joni’s data prefilled. By default, the window displays the **Mailbox** tab (the tabs appear at the top under Joni's name).
 
@@ -57,7 +57,7 @@ In this task you will create two types of groups within Exchange Online:
 
 - The second type of group that you will create is a dynamic distribution list. This group will contain the members of Adatum's new Dynamics CRM project team. Holly Dickson will be the group owner, and Nestor Wilke will be assigned as a group member.
 
-1. Your browser should still be open to the **Exchange admin center** from the prior task, and it should still be displaying **recipients** from the left-hand navigation pane. In the prior task, you worked with user accounts using the **mailboxes** tab. In this task, you will be creating groups, so select the **groups** tab at the top of the **recipients** page.  <br/>
+1. Your browser should still be open to the **Exchange admin center** from the prior task, and it should still be displaying the expanded **Recipients** group in the left-hand navigation pane. In the prior task, you worked with user accounts using the **Mailboxes** option under the Recipients group. In this task, you will be creating groups, so select the **Groups** option in the **Recipients** group.  <br/>
 
 	**Note:** You should already see the **Inside Sales** group that you created in Lab 2. This is a Microsoft 365 group whose email address is associated with the custom, on-premises domain (@xxxUPNxxx.xxxCustomDomainxxx.xxx). In the following steps, you will create a Distribution list group and a Microsoft 365 group whose email addresses will be in Microsoft 365 (@xxxxxZZZZZZ.onmicrosoft.com). 
 
@@ -128,7 +128,7 @@ In this task you will create two types of groups within Exchange Online:
 
 Organizations have typically relied on distribution groups in Exchange to communicate and collaborate with groups of people both inside and outside the company. However, Microsoft 365 Groups offer a more powerful solution for collaboration, and Adatum’s CTO wants to take advantage of this feature. He has asked you to upgrade the company’s Sales Department distribution list to a Microsoft 365 group so that Adatum’s Sales staff can choose the people they want to collaborate with and easily set up a collection of resources for those people to share.
 
-1. In the **Exchange admin center**, you should still be displaying **recipients** from the left-hand navigation pane, and you should still be displaying the **groups** tab. 
+1. In the **Exchange admin center**, you should still be displaying the **Groups** option under the expanded **Recipients** group in the left-hand navigation pane. 
 
 2. Select the circle to the left of the **Sales Department** distribution list. When a check mark appears, select the three horizontal ellipses icon and select **Upgrade distribution group**.
 	
@@ -164,7 +164,7 @@ Adatum’s CTO wants Holly to implement a standard naming policy throughout the 
 
 A room mailbox is a resource mailbox that is assigned to a physical location, such as a conference room, an auditorium, or a training room. Users can easily reserve these rooms by including room mailboxes in their meeting requests. Adatum’s CTO wants to test this feature using the company’s most popular conference room, and he has asked Holly to configure this resource.
 
-1. In the **Exchange admin center**, you should still be displaying **recipients** from the left-hand navigation pane. In this select **resources.**
+1. In the **Exchange admin center**, you should still be displaying the expanded **Recipients** group in the left-hand navigation pane. Under this group, select **Resources.**
 
 2. In the menu bar, select the **Add a resource** sign and then in the new window, select **Room**.  </br></br>
 	‎**Note:** This selection is designed for administrators to set up a meeting location for booking purposes. When scheduling meetings, you will be able to select the room from the Global Address List (GAL).
@@ -185,12 +185,12 @@ A room mailbox is a resource mailbox that is assigned to a physical location, su
 
 4. Select **Next** and then select **Next** for the resource address section.
 
-5. In the **Booking options** window select the **Allow scheduling only during working hours** check box. 
+5. In the **Booking options** window, select the **Allow scheduling only during working hours** check box. 
 
 6. Uncheck the **Auto-accepts meeting request** check box. In the **Booking delegates** field, enter **Holly Dickson** and **Nestor Wilke**. </br></br>
 	**Note:** This option allows a user to filter booking requests.
 	
-7. Ensure the box next to **Automatically decline meetings outside of limits below** is selected; otherwise, you won't be able to enter the information in the following steps.
+7. Ensure the box next to **Automatically decline meetings outside of limits below** is selected. If this option is not selected, you won't be able to enter the information in the following steps.
 
 8. In the **Booking window (days)** field, enter **60** days.  </br></br>
 	**Note:** As a best practice, organizations should establish a company standard so that events do not over-book locations.
@@ -205,9 +205,9 @@ A room mailbox is a resource mailbox that is assigned to a physical location, su
 
 One of the key features of Exchange Online is the ability to maintain different types of contacts in the Exchange Admin Center. In this task, you will be introduced to mail contacts and mail users.
 
-1. In the **Exchange admin center**, you should still be displaying **recipients** from the left-hand navigation pane. Select **contacts.**
+1. In the **Exchange admin center**, you should still be displaying the expanded **Recipients** group in the left-hand navigation pane. Under this group, select **Contacts.**
 
-2. In the menu bar that appears over the list of contacts, select **Add a contact** and in the menu that appears, in the first drop down menu select **Mail contact.**  <br/>
+2. In the menu bar that appears over the list of contacts, select **Add a contact**. and in the menu that appears, in the first drop down menu select **Mail contact.**  <br/>
 
 	‎**Note:** This option enables external people from outside your organization to be added to your Exchange Online distribution lists.
 
@@ -259,24 +259,20 @@ Adatum has experienced a recent rash of malware infections. The company's CTO ha
 
 **Note:** In these next three tasks you will configure malware, connection, and spam filters, respectively. These filters were previously configured in the Exchange admin center; however, starting December 1, 2020, that functionality has been moved to the Security and Compliance Center, which is where you will go to create these filters.
 
-1.  You should still be logged into LON-CL1 as the **Holly Dickson** with a
-    password of **Pa55w.rd**; however, if the log-in page appears, then log in
-    now.
+**Permissions Warning:** A user must have appropriate permissions to create malware, connection, and spam filters. To create these objects, a user can be assigned the appropriate permissions in either of two ways:
 
-2.  In your **Edge** browser, you should still have a tab open for the
-    **Microsoft 365 admin center**. If so, then select this tab and proceed to
-    the next step; otherwise, navigate to the **Office 365 home** page, log in
-    as your tenant admin account, navigate to the **Microsoft 365 admin
-    center**, and then in the left-hand navigation pane, select **Show all**.
+- The user can be assigned either the Security Administrator or Organization Management role in the Security and Compliance Center.
+- You can run a series of PowerShell commands that install the Exchange Online Management module and then enables the user to customize organization settings. 
 
-3.  In the **Microsoft 365 admin center**, in the left-hand navigation pane
-    under **Admin centers**, select **Security**.
+Because the real-world approach is usually to assign the appropriate role through the Security and Compliance Center, this task will have you assign Holly Dickson to the Organization Management role. However, based on lab testing, it may take up to an hour for the role responsibilities to propagate completely through Adatum's Microsoft 365 tenant in your VM lab environment. As such, when you attempt to save the malware filter that you create in this task, you may receive a Client Error. This error is caused by the simple fact that the responsibilities assigned to the Organization Management role have not propagated completely through your tenant from the time you assigned the role to the time you saved the filter. If you receive this error, you will be given instructions to run the PowerShell commands that enable your ability to create these filters. You should then repeat the insructions in this task to create the malware filter. 
 
-4.  In the **Office 365 Security & Compliance center**, select **Threat Management** in the left-hand
-    navigation pane, and then in the expanded group select **Policy**.
+1.  In your **Edge** browser, you should still have a tab open for the **Microsoft 365 admin center**. If so, then select this tab and proceed to the next step; otherwise, navigate to the **Office 365 home** page, log in as your tenant admin account, navigate to the **Microsoft 365 admin center**, and then in the left-hand navigation pane, select **Show all**.
+
+3.  In the **Microsoft 365 admin center**, in the left-hand navigation pane under **Admin centers**, select **Security**.
+
+4.  In the **Office 365 Security & Compliance center**, select **Threat Management** in the left-hand navigation pane, and then in the expanded group select **Policy**.
     
-6.  In the **Office 365 Security & Compliance center**, select **Threat Management** in the left-hand
-    navigation pane, and then in the expanded group select **Permissions**.
+6.  In the **Office 365 Security & Compliance center**, select **Threat Management** in the left-hand navigation pane, and then in the expanded group select **Permissions**.
     
 7.  In the **Home \> permissions** page in the **search** field, type **Org** then select the search glass.
 
