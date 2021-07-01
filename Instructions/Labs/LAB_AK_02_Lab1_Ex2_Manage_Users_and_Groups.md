@@ -102,13 +102,9 @@ In this task, you will create two new groups and then manage the groups by assig
 
 12. In the **Set up the basics** page, enter **Inside Sales** in the **Name** field, and then enter **Collaboration group for the Inside Sales team** in the **Description** field (even if you don't enter a description, you must still select into this field to enable the **Next** button). Select **Next**.
 
-13. In the **Assign Owners** window, select **+ Assign owners**.
-	
-	You will assign Allan Deyoung and Patti Fernandez as owners by selecting each of the users in the list<br/>
-
-	Select **Allan Deyoung** and  **Patti Fernandez** the select **Add (2)**<br/>
-	
-	Select **Next**.
+13. In the **Assign Owners** window, select **+ Assign owners**. You will assign Allan Deyoung and Patti Fernandez as owners of the group.
+	- In the list of users, select **Allan Deyoung** and  **Patti Fernandez**, and then select **Add (2)**.
+	- Select **Next**.
 
 14. In the **Add members** page, select **+ Add members**, select **Diego Siciliani** and **Lynne Robbins**, select **Add (2), then select **Next**.
 
