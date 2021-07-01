@@ -106,12 +106,12 @@ In this task, you will create two new groups and then manage the groups by assig
 	- In the list of users, select **Allan Deyoung** and  **Patti Fernandez**, and then select **Add (2)**.
 	- Select **Next**.
 
-14. In the **Add members** page, select **+ Add members**, select **Diego Siciliani** and **Lynne Robbins**, select **Add (2), then select **Next**.
+14. In the **Add members** page, select **+ Add members**, select **Diego Siciliani** and **Lynne Robbins**, select **Add (2)**, and then select **Next**.
 
 15. In the **Edit settings** page, enter the following information and then select **Next**: <br/>
 
-	- Enter **insidesales** in the **Group email address** field
-	- Under the **Privacy** section, select the **Public** option (you must select it even if it's already selected in order to enable the **Next** button at the bottom of the page)
+	- Enter **insidesales** in the **Group email address** field.
+	- Under the **Privacy** section, select the **Public** option (you must select it even if it's already selected in order to enable the **Next** button at the bottom of the page).
 	- Under the **Add Microsoft Teams to your group** section, verify the **Create a team for this group** check box is selected (select it if need be), then select **Next**.
 
 16. In the **Review and finish adding group** page, review the content that you entered. If everything is correct, select **Create group**; otherwise, select **Back** and fix anything that must be corrected (or select **Edit** under the specific area that needs adjustment).
@@ -142,7 +142,7 @@ In this task, you will create two new groups and then manage the groups by assig
 
 22. In the **Members** window that appears, select **+ Add members**. This displays the list of active Microsoft 365 users.
 
-23. In the list of users, select the check boxes for **Isaiah Langer**, **Megan Brown** and **Nestor Wilke**, and then at the bottom of the window select **Add (3)**. 
+23. In the list of users, select the check boxes for **Isaiah Langer**, **Megan Brown**, and **Nestor Wilke**, and then at the bottom of the window select **Add (3)**. 
 
 24. Verify that the members list has the three users and select the **X** to close the members pane. This displays the list of users for this group. Select **Close** again. 
 
