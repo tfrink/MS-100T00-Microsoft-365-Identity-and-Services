@@ -38,77 +38,90 @@ As you continue in your role as Holly Dickson, you are ready to review the steps
 
 10. While in the **Manage mailbox delegation** window and select **Edit** to the right of **Read and manage** 
 
-11. In the **Manage Mailbox deligation* window, select **+ Add permissions**. In the search bar type in **Holly Dickson**  and select **Holly Dickson** from the list of user accounts, select the **Save** button. Then select **Close** then **cance**l twice  <br/>
+11. In the **Manage Mailbox deligation** window, select **+ Add permissions**. 
 
-	‎**Note:** After about an hour Holly Dickson will be able to access Joni’s mailbox without needing a password.
+12. In the search bar, type in **Holly Dickson**.  In the list of user accounts that appears, select **Holly Dickson** and then select the **Save** button. Select **Close** and then select **cancel** twice.  <br/>
 
-12. On Joni Sherman's **Mailbox** window, select the **X** in the top right hand of the pane.
+	‎**Note:** It may take about an hour for permission changes to propagate through the Microsoft 365 tenant. At that time, Holly Dickson will be able to access Joni’s mailbox without needing a password.
 
-13. Leave your browser and all the tabs open for the next task.
+13. On Joni Sherman's **Mailbox** window, select the **X** in the top right-hand corner of the pane to close it.
+
+14. Leave your browser and all the tabs open for the next task.
 
  
 ### Task 2 – Manage Groups 
 
-In this task you will create two types of groups within Exchange Online. The first is a distribution list of email recipients, which is used to create a one-stop email list for contacting users simultaneously rather than having to email each recipient individually. The second type of group is a Microsoft 365 group.
+In this task you will create two types of groups within Exchange Online: 
+
+- The first group will be a distribution list of email recipients within the Sales department. Distribution lists are used to create a one-stop email list for contacting users simultaneously rather than having to email each recipient individually. Holly Dickson and Alex Wilber will be owners of the group, and you will assign Allan Deyoung, Diego Siciliani, and Lynne Robbins as group members.
+
+- The second type of group that you will create is a dynamic distribution list. This group will contain the members of Adatum's new Dynamics CRM project team. Holly Dickson will be the group owner, and Nestor Wilke will be assigned as a group member.
 
 1. Your browser should still be open to the **Exchange admin center** from the prior task, and it should still be displaying **recipients** from the left-hand navigation pane. In the prior task, you worked with user accounts using the **mailboxes** tab. In this task, you will be creating groups, so select the **groups** tab at the top of the **recipients** page.  <br/>
 
 	**Note:** You should already see the **Inside Sales** group that you created in Lab 2. This is a Microsoft 365 group whose email address is associated with the custom, on-premises domain (@xxxUPNxxx.xxxCustomDomainxxx.xxx). In the following steps, you will create a Distribution list group and a Microsoft 365 group whose email addresses will be in Microsoft 365 (@xxxxxZZZZZZ.onmicrosoft.com). 
 
-2. Select **Add a  group** button under the Microsoft 365 tab.
+2. You will begin by adding a distribution list of email recipients within the Sales department. Select the **Add a  group** button under the Microsoft 365 tab.
 
-3. In the **Choose a group type** window that appears, choose **Distribution** and click **Next**.
+3. In the **Choose a group type** window that appears, select **Distribution** and then select **Next**.
 
-4. In the **Set up the Basics** tab, add the group name of **Sales Department** next to **Name** and leave description blank and select **Next**.
+4. In the **Set up the Basics** tab, add the group name of **Sales Department** next to **Name**, leave the description blank, and then select **Next**.
 
-5. In the **Edit settings** tab Enter the following then click **Next**:	
+5. In the **Edit settings** tab, enter the following information and then select **Next**:	
 
 	- Email Address: Type in  **SalesDept**. In the domain field to the right of it, select the drop-down arrow and select **xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider).
 
-	- Joining the Group: Select **Owner Approval** This allows the owner to control who can join the group.
+	- Joining the Group: Select **Owner Approval** This option allows the owner to control who can join the group.
 	
-	- Leaving the Group: Select **Closed** This allows the owner to control who can leave the group. Together with Joining the group you can control who joins or leaves your distribution. However if you need less administration leaving open for either is an option. 
+	- Leaving the Group: Select **Closed**. This option enables the owner to control who can leave the group. Together with the prior **Joining the Group** option, you can control who joins or leaves your distribution group. **Tip:** In a real-world scenario, if your organization wants less administration, then leave the Joining and Leaving group options set to **Open**. 
 
-6. In the next section select **Create group** and click **Close**
+6. In the next section, select **Create group** and then select **Close**.
 
-7. Wait until you see your group name under the **Distribution list** tab. If you don't see it, refresh every 5 minutes.
+7. Wait until you see your group name under the **Distribution list** tab. If you don't see it, refresh the tab every few minutes.
 
-8. Once you see your new group, **Sales Department**, click on the group name and click on the **Members** tab.
+8. Once you see your new **Sales Department** group, select directly on the group name and then select the **Members** tab.
 
-9. Click on **View all and manage owners**. Since you are logged into the EAC using Holly Dickson, her account is displayed as the default Owner. However, Holly wants Alex Wilber to co-own the group, so select the **+ Add owners** sign under the **Owners** section, and in the **Add Owners** window, select **Alex Wilber**, select the **Add (1)** button, and then select the back arrow. 
+9. On the **Members** tab, select **View all and manage owners**. Since you are logged into the EAC using Holly Dickson, her account is displayed as the default Owner. However, Holly wants Alex Wilber to co-own the group, so select **+ Add owners** under the **Owners** section.
 
-10. Click on **View all and manage members** now.select the plus **+ Add members** under the **Members** section, and in the **Add Members** window, select **Allan Deyoung**, and **Diego Siciliani** and **Lynne Robbins**, then select the **Add (3)** button and then select back arrow. 
+10. In the **Add Owners** window, select **Alex Wilber**, select the **Add (1)** button, and then select the back arrow. 
 
-11. Verify the changes are made and the click on the **X** in the top right hand corner.
+11. Select **View all and manage members**. Select **+ Add members** under the **Members** section. 
 
-12. Select the **Add a group** button. 
+12. In the **Add Members** window, select **Allan Deyoung**, **Diego Siciliani**, and **Lynne Robbins**. Select the **Add (3)** button and then select the back arrow. 
 
-13. In the **Choose a group** window that appears, choose **Dynamic distrabution** and select **Next** enter the following information:
+13. Verify the changes were made and then select the **X** in the top right-hand corner of the pane to close it.
+
+14. You will now add a dynamic distribution list that contains the members of Adatum's new Dynamics CRM project team. Begin by selecting the **Add a group** button. 
+
+15. In the **Choose a group** window that appears, select **Dynamic distrabution**, select **Next**, and then enter the following information:
 
 	- Group name: **Dynamics CRM Project Team**
 	
-	- Description: **Adatum users working on the Microsoft Dynamics CRM project.** 
+	- Description: **Adatum users working on the Microsoft Dynamics CRM project** 
 
-14. In the **Assign users** Enter the folling inofrmation then click on **Next**:
+16. In the **Assign users** section, enter the following information and then select **Next**:
 
 	- Owners: **Holly Dickson**
 	
 	- Members: Ensure **All recipient types** is selected
 
-15. Under **Edit settings** Enter the folling inofrmation then click on **Next**:
+17. Under **Edit settings**, enter the following information then select **Next**:
 
 	- Group email address: **DynCRM**
 
 	- Group email address domain: In the domain field to the right of the **DynCRM** alias, select the drop-down arrow and select **xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider)
 
-14. Select **Create Group** and then select **Close**. 
+18. Select **Create Group** and then select **Close**. 
 
-15. Go to the **Dynamic distribution list** and click directly on **Dynamic CRM Project Team**.
+19. Go to the **Dynamic distribution list** and select directly on **Dynamic CRM Project Team**.
 
-16. In the **Dynamics CRM Project Team** window, the **Members**. Under **Owners**, select the **View all and manage owners**, and in the **Add Owners** window, select **Nestor Wilke**, select the **Add (1)** button, and then select back arrow.
+20. In the **Dynamics CRM Project Team** window, the **Members** tab is displayed. Under **Owners**, select **View all and manage owners**.
 
-17. Ensure all changes were made then close out of the **Dynamics CRM Project Team** window.
+21. In the **Add Owners** window, select **Nestor Wilke**, select the **Add (1)** button, and then select the back arrow.
 
+22. Ensure all changes were made and then close out of the **Dynamics CRM Project Team** window.
+
+23. Leave your browser and all the tabs open for the next task.
 
 ### Task 3 - Upgrade Distribution Lists
 
