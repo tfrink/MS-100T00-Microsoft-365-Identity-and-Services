@@ -73,7 +73,8 @@ In this task you will create two types of groups within Exchange Online:
 
 	- Joining the Group: Select **Owner Approval** This option allows the owner to control who can join the group.
 	
-	- Leaving the Group: Select **Closed**. This option enables the owner to control who can leave the group. Together with the prior **Joining the Group** option, you can control who joins or leaves your distribution group. **Tip:** In a real-world scenario, if your organization wants less administration, then leave the Joining and Leaving group options set to **Open**. 
+	- Leaving the Group: Select **Closed**. This option enables the owner to control who can leave the group. Together with the prior **Joining the Group** option, you can control who joins or leaves your distribution group. </br></br>
+**Tip:** In a real-world scenario, if your organization wants less administration, then leave the Joining and Leaving group options set to **Open**. 
 
 6. In the next section, select **Create group** and then select **Close**.
 
@@ -129,13 +130,14 @@ Organizations have typically relied on distribution groups in Exchange to commun
 
 1. In the **Exchange admin center**, you should still be displaying **recipients** from the left-hand navigation pane, and you should still be displaying the **groups** tab. 
 
-2. Select the circle to the left of the **Sales Department** distribution list and when you see a check mark select the three horizontal ellipses and select **Upgrade distribution group**.
+2. Select the circle to the left of the **Sales Department** distribution list. When a check mark appears, select the three horizontal ellipses icon and select **Upgrade distribution group**.
 	
-3. A **Ready to upgrade** pop up will appear. Select **Upgrade**. <br>
-	This may take up to 5 minutes for it to show up under your **Microsoft 365** tab
+3. A **Ready to upgrade** pop up will appear. Select **Upgrade**. </br></br> 
+	**Note:** It may take up to 5 minutes for the Sales Department group to show up under the **Microsoft 365** tab.
 
-4. If the **Sales Department** group still displays as a **Distribution list**, then select the **Refresh** icon in the menu bar above the list; the Sales Department group will now display as a **Microsoft 365** group. 
- 
+4. If the **Sales Department** group still displays as a **Distribution list**, then select the **Refresh** icon in the menu bar above the list. The Sales Department group should now display as a **Microsoft 365** group. 
+
+5. Leave your browser and all the tabs open for the next task. 
 
 ### Task 4 - Configure a Group Naming Policy
 
@@ -145,18 +147,18 @@ Adatum’s CTO wants Holly to implement a standard naming policy throughout the 
 
 1. In the **Exchange admin center**, you should still be displaying the list of groups. In the menu bar that appears over the list of groups, select **Add naming policy.**
 
-2. In the **Edit group naming policy** window that appears, you can select a prefix and a suffix. <br/>
+2. In the **Edit group naming policy** window that appears, you will add a prefix and a suffix. </br></br>
+	In the **For the prefix, apply the following sequence:** field, select the drop-down arrow and select **Attribute**. To the right in the **select one** field, select **Department**.
 
-	In the **For the prefix, apply the following sequence:** field, select the drop-down arrow and select **Attribute** and to the right in the **select one** field select **Department**.
+3. Select **Add prefix**. 
 
-3. Select **Add prefix** select the drop-down arrow in the box that has **Attribute** and select **Text**. In the **Add text** field, enter **Group**.
+4. Select the drop-down arrow in the box that has **Attribute** and then select **Text**. In the **Add text** field, enter **Group**.
 
-4. Below the **AND** field. 
+5. Below the **AND  Select a suffix to add to the end of group names**, select the drop-down arrow and then select **Attribute**. Select the drop-down arrow and then select **City**.
 
-5. Below the **AND  Select a suffix to add to the end of group names**, select the drop-down arrow and select **Attribute**. Select the drop-down arrow, select **City**.
+6. Review the **Preview policy** example that is based on the parameters you selected. If any need to be fixed, select the correct values now. When everything looks correct, select the **Save** button at the bottom of the window and close out of the pane.
 
-6. Review the **Preview policy** example that is based on the parameters you selected. If any need to be fixed, select the correct values now. When everything looks OK, select the **Save** button at the bottom of the window and close out of the pane.
-
+7. Leave your browser and all the tabs open for the next task.
 
 ### Task 5 – Manage Resources
 
@@ -164,8 +166,7 @@ A room mailbox is a resource mailbox that is assigned to a physical location, su
 
 1. In the **Exchange admin center**, you should still be displaying **recipients** from the left-hand navigation pane. In this select **resources.**
 
-2. In the menu bar, select the **Add a resource** sign and then in the new window, select **Room**.  <br/>
-	
+2. In the menu bar, select the **Add a resource** sign and then in the new window, select **Room**.  </br></br>
 	‎**Note:** This selection is designed for administrators to set up a meeting location for booking purposes. When scheduling meetings, you will be able to select the room from the Global Address List (GAL).
 
 3. In the **Fill in the basic info** window that appears, enter the following information:
@@ -186,20 +187,19 @@ A room mailbox is a resource mailbox that is assigned to a physical location, su
 
 5. In the **Booking options** window select the **Allow scheduling only during working hours** check box. 
 
-6. Uncheck the **Auto-accepts meeting request**, then in the **Booking delegates** type in **Holly Dickson** and **Nestor Wilke**. <br/>
-
+6. Uncheck the **Auto-accepts meeting request** check box. In the **Booking delegates** field, enter **Holly Dickson** and **Nestor Wilke**. </br></br>
 	**Note:** This option allows a user to filter booking requests.
 	
-7. Ensure the box next to **Automatically decline meetings outside of limits below** is selected or you won't be able to input the following information.
+7. Ensure the box next to **Automatically decline meetings outside of limits below** is selected; otherwise, you won't be able to enter the information in the following steps.
 
-8. In the **Booking window (days)** field, input **60** days.  <br/>
+8. In the **Booking window (days)** field, enter **60** days.  </br></br>
+	**Note:** As a best practice, organizations should establish a company standard so that events do not over-book locations.
 
-	‎**Note:** As a best practice, organizations should establish a company standard so that events do not over-book locations.
+9. In the **Maximum duration (hours)** field, enter **120** hours (this is five days, or one work week). 
 
-9. In the **Maximum duration (hours)** field, input **120** hours (this is five days, or one work week). 
+10. Select **Next** and then review the resource information. Select **Create** and wait for the resouce to be created. When it's finished, select the **Done** button that appears. You have now successfully created a new room mailbox.
 
-10. Select **Next** then review the resource information. Click on **Create** and wait for the resouce to be created. When it's finished, you'll see a **Done** button appear. Click **Done** and you have successfully created a new room mailbox.
-
+11. Leave your browser and all the tabs open for the next task.
 
 ### Task 6 – Manage Contacts
 
@@ -253,7 +253,6 @@ One of the key features of Exchange Online is the ability to maintain different 
 
 8. Leave the Exchange admin center tab open and proceed to the next task.
 
- 
 ### Task 7 – Configure Messaging Protection
 
 Adatum has experienced a recent rash of malware infections. The company's CTO has asked Holly to investigate the various options that are available in Exchange Online to fortify Adatum’s messaging environment.
@@ -324,10 +323,8 @@ Adatum has experienced a recent rash of malware infections. The company's CTO ha
 
     **Note**: A **Security & Compliance** window will appear with a message that indicates your organization settings need to be updated. Select **Yes** to continue.
     
-24.  It may take a minute or so for your organization settings to be updated.
-    Once the update is complete and you are back on the **Home \> Policy \>
-    Anti-malware** page, you can proceed to the next task. Do not close any of
-    the browser tabs.
+24.  It may take a minute or so for your organization settings to be updated. Once the update is complete and you are back on the **Home \> Policy \>
+    Anti-malware** page, you can proceed to the next task. Do not close any of the browser tabs.
 
 ### Task 8 – Manage Connection Filters
 
